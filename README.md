@@ -1,2 +1,4 @@
-# Thrivetalk
- Site for portfolio
+Сайт для портфолио<br>
+Сайт сверстан по макету Thrivetalk. <br>
+Использовались технологии HTML, CSS, JavaScript.<br>
+Сайт адаптивный и кроссбраузерный.<br>
