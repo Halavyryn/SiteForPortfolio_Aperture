@@ -70,7 +70,12 @@ a:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    transition: all 0.2s ease-in-out;
 }
+.section-btn:hover{
+    transform: scale(1.1);
+}
+
 .section-btn img{
     padding: 5px;
 }
@@ -173,6 +178,11 @@ a:hover{
     background-size: cover;
     border-radius: 14px;
     padding: 9px 20px 13px 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.menu__list-btn:hover{
+    transform: scale(1.1);
 }
 .menu__list-btn a{
     display: block; !* Ссылка как блочный элемент *!
@@ -491,6 +501,10 @@ a:hover{
     position: absolute;
     right: 6px;
     bottom: 11px;
+    transition: all 0.2s ease-in-out;
+}
+.form__btn:hover{
+    transform: scale(1.1);
 }
 .footer__social{
     margin-top: 56px;
@@ -671,7 +685,7 @@ a:hover{
     position:fixed;
     top:0;
     width: 400px;
-    background-color: #000000;
+    background-color: #4D5256;
     border-radius: 6px;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.1);
