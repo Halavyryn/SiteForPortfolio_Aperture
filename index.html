@@ -31,7 +31,7 @@
                 <li class="menu__list"><a href="#" class="menu__link">Featured images</a></li>
                 <li class="menu__list"><a href="#" class="menu__link">Gear cage</a></li>
                 <li class="menu__list"><a href="#" class="menu__link">Contact</a></li>
-                <li class="menu__list menu__list-btn" ><a href="#" class="menu__link menu__link-btn">Get template</a></li>
+                <li class="menu__list menu__list-btn" ><a onclick="openPopup('Get template')" href="#" class="menu__link menu__link-btn">Get template</a></li>
             </ul>
         </nav>
     </div>
@@ -79,7 +79,7 @@
                         Nulla efficitur auctor hendrerit. Etiam ut orci varius,
                         faucibus libero ac, cursus quam.
                     </p>
-                    <button class="photo__container_btn section-btn"><img src="images/photo-kub.png" alt="kub">
+                    <button class="photo__container_btn section-btn" onclick="openPopup('PRODUCT PHOTOGRAPHY')"><img src="images/photo-kub.png" alt="kub">
                         Read more
                     </button>
                 </div>
@@ -91,7 +91,7 @@
                         Nulla efficitur auctor hendrerit. Etiam ut orci varius,
                         faucibus libero ac, cursus quam.
                     </p>
-                    <button class="photo__container_btn section-btn"><img src="images/photo-kub.png" alt="kub">
+                    <button class="photo__container_btn section-btn" onclick="openPopup('PRODUCT PHOTOGRAPHY')"><img src="images/photo-kub.png" alt="kub">
                         Read more
                     </button>
                 </div>
@@ -103,7 +103,7 @@
                         Nulla efficitur auctor hendrerit. Etiam ut orci varius,
                         faucibus libero ac, cursus quam.
                     </p>
-                    <button class="photo__container_btn section-btn"><img src="images/photo-kub.png" alt="kub">
+                    <button class="photo__container_btn section-btn" onclick="openPopup('PRODUCT PHOTOGRAPHY')"><img src="images/photo-kub.png" alt="kub">
                         Read more
                     </button>
                 </div>
@@ -115,7 +115,7 @@
                         Nulla efficitur auctor hendrerit. Etiam ut orci varius,
                         faucibus libero ac, cursus quam.
                     </p>
-                    <button class="photo__container_btn section-btn"><img src="images/photo-kub.png" alt="kub">
+                    <button class="photo__container_btn section-btn" onclick="openPopup('PRODUCT PHOTOGRAPHY')"><img src="images/photo-kub.png" alt="kub">
                         Read more
                     </button>
                 </div>
@@ -154,7 +154,7 @@
                        are the tools that we actually use everyday to capture
                        the amazing things around us.
                    </p>
-                   <button class="tools__block_btn section-btn"><img src="images/photo-kub.png" alt="kub">
+                   <button class="tools__block_btn section-btn" onclick="openPopup('The Gear cage')"><img src="images/photo-kub.png" alt="kub">
                        Check it out
                    </button>
                </div>
@@ -234,7 +234,7 @@
                         <div class="help__block">
                             <p class="help__block_title">Need help with photography or videography?</p>
                             <p class="help__block_subtitle">We're here for you!.</p>
-                            <button class="help__block_btn section-btn"><img src="images/photo-kub.png" alt="kub">
+                            <button class="help__block_btn section-btn" onclick="openPopup('Need help with photography or videography')"><img src="images/photo-kub.png" alt="kub">
                                 Get in touch
                             </button>
                         </div>
@@ -286,7 +286,7 @@
                 <div class="footer__subscribe_mail">
                     <form action="" class="form">
                         <input class="form__input" type="text" placeholder="E-mail">
-                        <button class="form__btn" type="submit">GO</button>
+                        <button class="form__btn" type="submit" onclick="openPopup('Subscribed')">GO</button>
                     </form>
                 </div>
             </div>
@@ -305,6 +305,11 @@
 
     </div>
 </footer>
+
+<div class="popup" id="popup">
+
+</div>
+
 
 <script src="js/script.js"></script>
 </body>
