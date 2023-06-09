@@ -5,4 +5,4 @@
 Сайт адаптивный и кроссбраузерный.<br>
 Реализованна анимация кнопок, попапы, кнопка Вверх. <br>
 Файлы сайта проверены валидаторами от W3C(HTML&CSS) <br>
-Ссылка на сайт: https://halavyryn.github.io/
+Ссылка на сайт: [https://halavyryn.github.io/](https://halavyryn.github.io/SiteForPortfolio_Thrivetalk/)
