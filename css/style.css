@@ -1,45 +1,15 @@
+/*Connecting a font*/
 @font-face {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins';
     src: url("../fonts/Poppins-Regular.ttf");
     font-style: normal;
     font-weight: 400;
 }
 
-html{
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
-}
-
-a{
-    color: inherit;
-    text-decoration: none;
-}
-
-li{
-    list-style: none;
-}
-
-img{
-    max-width: 100%;
-}
-
-button{
-    color: inherit;
-    font-size: inherit;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    padding: 0;
-}
 
 /*users style*/
 
+/*general classes*/
 body{
     font-family: 'Poppins',sans-serif;
     color: #C0C0C0;
@@ -55,7 +25,6 @@ body{
 a:hover{
   text-decoration:underline;
 }
-/*general classes*/
 
 /*class section-btn*/
 .section-btn{
@@ -139,7 +108,6 @@ a:hover{
     font-size: 14px;
     line-height: 20px;
 }
-
 .hamburger{
     display: none;
     cursor: pointer;
@@ -149,11 +117,9 @@ a:hover{
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
-
 .nav{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -168,6 +134,7 @@ a:hover{
     align-items: center;
     gap: 32px;
 }
+
 /*menu__link*/
 .menu__list-btn{
     font-size: 16px;
@@ -184,17 +151,12 @@ a:hover{
 .menu__list-btn:hover{
     transform: scale(1.1);
 }
-.menu__list-btn a{
-    display: block; !* Ссылка как блочный элемент *!
-    text-align: center; !* Выравнивание по центру *!
-    height: 100%; !* Высота на весь слой *!
-    color: #666; !* Цвет ссылки *!
-    cursor: pointer;
-}
+
+
 /*section top*/
 .top{
     background-image: url("../images/top.jpg");
-    min-height: 716px;
+    max-height: 716px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -219,11 +181,11 @@ a:hover{
 }
 .top__block_text {
     margin: 18px 20px 20px 20px;
-
 }
 .top__options {
     margin-top: 4px;
 }
+
 
 /*section photo*/
 .photo{
@@ -291,10 +253,12 @@ a:hover{
     margin-bottom: 30px;
 }
 
+
 /*section mount*/
 .mount{
     background-image: url("../images/mount.jpg");
 }
+
 
 /*section tools*/
 .tools{
@@ -338,10 +302,13 @@ a:hover{
     margin-bottom: 20px;
 }
 
+
 /*section forest*/
 .forest{
     background-image: url("../images/forest.jpg");
 }
+
+
 /*section clients*/
 .clients{
     min-height: 500px;
@@ -372,10 +339,13 @@ a:hover{
     align-items: center;
     justify-content: space-between;
 }
+
+
 /*section sky*/
 .sky{
     background-image: url("../images/sky.jpg");
 }
+
 
 /*section help*/
 .help {
@@ -391,7 +361,7 @@ a:hover{
 }
 
 .help__block_title {
-    width:571px ;
+    max-width:571px ;
     font-size: 40px;
     line-height: 42px;
     color: #FFFFFF;
@@ -407,8 +377,10 @@ a:hover{
     line-height: 20px;
     width: 154px;
 }
-.footer{
 
+
+/*section footer*/
+.footer{
     min-height: 652px;
     background: #000000;
     padding: 0 30px;
@@ -418,7 +390,6 @@ a:hover{
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
     gap: 16px;
-
 }
 .footer__logo{
     margin-right: auto;
@@ -428,7 +399,6 @@ a:hover{
     font-size: 13px;
     color: #C0C0C0;
 }
-
 .footer__areas_title{
     font-size: 14px;
     text-transform: uppercase;
@@ -442,13 +412,11 @@ a:hover{
     flex-direction: column;
     gap: 10px;
 }
-
 .footer__pages_title {
     font-size: 14px;
     text-transform: uppercase;
     color: #C0C0C0;
 }
-
 .footer__pages_menu {
     margin-top: 10px;
     font-size: 14px;
@@ -457,7 +425,6 @@ a:hover{
     flex-direction: column;
     gap: 10px;
 }
-
 .footer__subscribe{
     margin-top: 36px;
     display: grid;
@@ -476,7 +443,6 @@ a:hover{
     font-size: 13px;
     color: #C0C0C0;
 }
-
 .form {
     position: relative;
 }
@@ -516,13 +482,41 @@ a:hover{
     flex-direction: row;
     gap: 20px;
 }
+
+/*media queries*/
 @media (max-width: 1300px) {
+   /* section top*/
     .top__options{
         margin-top: 20px;
     }
 }
 
+@media (max-width: 1050px) {
+    /* section footer*/
+    .footer__nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .footer__logo{
+        width: 100%;
+        text-align: center;
+    }
+    .footer__logo_text{
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .footer__areas_menu{
+        font-size: 20px;
+    }
+    .footer__pages_menu{
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 980px) {
+    /* section header*/
     .nav{
         display: flex;
         justify-content: space-between;
@@ -558,45 +552,33 @@ a:hover{
     .menu_active{
         left: 0;
     }
+
+    /* section clients*/
     .clients__menu img{
         width: 100px;
     }
 }
 
-@media (max-width: 1050px) {
-
-    .footer__nav{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 20px;
-    }
-    .footer__logo{
-        width: 100%;
-        text-align: center;
-    }
-    .footer__logo_text{
-        font-size: 20px;
-        padding-bottom: 30px;
-    }
-    .footer__areas_menu{
-        font-size: 20px;
-    }
-    .footer__pages_menu{
-        font-size: 20px;
-    }
-
-}
 
 @media (max-width: 800px) {
+    /* section top*/
+    .top__block{
+        padding-top: 340px;
+    }
+
+    /* section photo*/
     .photo__containers{
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
     }
+
+    /* general section photo*/
     .section-photo__block{
         margin: 0 30px;
     }
+
+    /*section tools*/
     .tools{
         display: grid;
         grid-template-columns: 1fr;
@@ -605,6 +587,7 @@ a:hover{
         padding-left: 0;
     }
 
+    /*section clients*/
     .clients__titles{
         padding-top: 80px;
         text-align: center;
@@ -624,9 +607,12 @@ a:hover{
         min-width: 128px;
     }
 
+    /*section help*/
     .help__block {
         padding-bottom: 113px;
     }
+
+    /*section footer*/
     .footer__subscribe{
         display: flex;
         flex-direction: column;
@@ -647,17 +633,44 @@ a:hover{
 }
 
 @media (max-width: 650px) {
+    /*section top*/
     .top__block{
         min-width: 320px;
+        padding-top: 240px;
     }
+
+    /*section help*/
+    .help__block_title{
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    /*section footer*/
     .form__input {
         width: 400px;
     }
 }
 
 @media (max-width: 475px) {
+    /*section top*/
+    .top__block{
+        padding-top: 140px;
+    }
+
+    /*section help*/
+    .help {
+        height: 314px;
+    }
+    .help__block_title{
+        font-size: 24px;
+    }
+    .help__block_subtitle {
+        font-size: 18px;
+    }
+
+    /*section footer*/
     .footer{
-        padding-top:50px;
+        padding-top:0;
     }
     .footer__social{
         padding-bottom: 30px;
@@ -679,7 +692,10 @@ a:hover{
         justify-content: center;
     }
 }
+
+
 /*popup*/
+
 .popup{
     overflow:hidden;
     position:fixed;

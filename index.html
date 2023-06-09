@@ -8,11 +8,10 @@
     <title>Document</title>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="jquery-3.3.1.min.js"></script>
-
 </head>
 <body>
 
+<!--Semantic structure of site-->
 <header class="header">
     <div class="container">
         <nav class="nav">
@@ -63,7 +62,6 @@
             </ul>
         </div>
     </section>
-
   <section class="photo">
         <div class="container">
             <h1 class="photo__title">What we do.</h1>
@@ -123,7 +121,6 @@
             </div>
         </div>
     </section>
-
   <section class="mount section-photo">
            <div class="section-photo__block ">
                <p class="section-photo__block_title">Sunset at Mount Fuji</p>
@@ -142,7 +139,6 @@
                </ul>
            </div>
   </section>
-
   <section class="tools">
                <div class="tools__block1">
                    <p class="tools__block_subtitle">The Gear cage</p>
@@ -168,8 +164,7 @@
                        </ul>
                    </div>
                </div>
-       </section>
-
+  </section>
   <section class="forest section-photo">
                <div class="section-photo__block ">
                    <p class="section-photo__block_title">Monstera Leafs</p>
@@ -188,7 +183,6 @@
                    </ul>
                </div>
   </section>
-
   <section class="clients">
              <div class="container">
 
@@ -209,7 +203,6 @@
 
              </div>
   </section>
-
   <section class="sky section-photo">
                  <div class="section-photo__block ">
                      <p class="section-photo__block_title">Star fall in the Himalayas</p>
@@ -228,7 +221,6 @@
                      </ul>
                  </div>
   </section>
-
   <section class="help">
                     <div class="container">
                         <div class="help__block">
@@ -284,9 +276,9 @@
                 </div>
 
                 <div class="footer__subscribe_mail">
-                    <form action="" class="form">
+                    <form action="#" class="form">
                         <input class="form__input" type="text" placeholder="E-mail">
-                        <button class="form__btn" type="submit" onclick="openPopup('Subscribed')">GO</button>
+                        <button class="form__btn" type="button" onclick="openPopup('Attention')">GO</button>
                     </form>
                 </div>
             </div>
@@ -306,6 +298,8 @@
     </div>
 </footer>
 
+
+<!--Animation for site-->
 <!--Popup for Button-->
 <div class="popup" id="popup">
 </div>
@@ -313,7 +307,8 @@
 <!--Button for Go to Top-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-
+<!--connecting scripts-->
+<script src="jquery-3.3.1.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
