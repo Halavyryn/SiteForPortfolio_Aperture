@@ -5,5 +5,5 @@
 Сайт адаптивный и кроссбраузерный.<br>
 Реализованна анимация кнопок, попапы, кнопка Вверх. <br>
 Файлы сайта проверены валидаторами от W3C(HTML&CSS) <br>
-Ссылка на сайт: https://halavyryn.github.io/SiteForPortfolio_Aperture/
-![Image alt](https://github.com/Halavyryn/SiteForPortfolio_Aperture/Aperture.png)
+Ссылка на сайт: https://halavyryn.github.io/SiteForPortfolio_Aperture/<br>
+![Image alt](https://github.com/Halavyryn/SiteForPortfolio_Aperture/raw/SiteForPortfolio_Aperture/Aperture.png)
